@@ -1,0 +1,13 @@
+Debug
+Release
+/.settings
+*.o
+*.d
+*.o
+.settings/language.settings.xml
+marin V5.3 1005 (1).launch
+Debug
+*.mk
+.vscode/c_cpp_properties.json
+.vscode/settings.json
+.vscode/launch.json
