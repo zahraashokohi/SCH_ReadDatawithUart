@@ -70,11 +70,11 @@ uint64_t SCHSpi48SendRequest(uint64_t request)
 
     // Send tx buffer and receive rx buffer simultaneously.
     SCHCsLow();
-    HAL_Delay(5);
+   // HAL_Delay(5);
     HAL_SPI_TransmitReceive(&hspi1, (uint8_t*)txBuffer, (uint8_t*)rxBuffer, size, 10);
-    HAL_Delay(5);
+  //  HAL_Delay(5);
     SCHCsHigh();
-    HAL_Delay(5);
+   // HAL_Delay(5);
 
     // Create receivedData qword from received rx buffer (MISO data).
     for (index = 0; index < size; index++)
